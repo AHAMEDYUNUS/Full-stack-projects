@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="C:\Users\ahame\Desktop\ToDo List App\frontend\static\css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="form-container">
+            <input type="text" id="username" placeholder="Enter your name">
+            <input type="text" id="task" placeholder="Enter a task">
+            <button id="addTask">Add Task</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Task</th>
+                    <th>Completed</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="taskList">
+                <!-- Tasks will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <div id="notification" class="hidden"></div>
+    <script src="C:\Users\ahame\Desktop\ToDo List App\frontend\static\js\app.js"></script>
+</body>
+</html>
