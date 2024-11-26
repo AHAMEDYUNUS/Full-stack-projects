@@ -36,5 +36,18 @@
     </div>
     <div id="notification" class="hidden"></div>
     <script src="frontend/static/js/app.js"></script>
+    <script>
+        fetch("https://full-stack-projects-us97.onrender.com/todos")
+            .then(response => response.json())
+            .then(todos => {
+                const list = document.getElementById("todo-list");
+                todos.forEach(todo => {
+                    const item = document.createElement("li");
+                    item.textContent = `${todo.username}: ${todo.task} (Completed: ${todo.completed})`;
+                    list.appendChild(item);
+                });
+            })
+            .catch(error => console.error("Error:", error));
+    </script>
 </body>
 </html>
